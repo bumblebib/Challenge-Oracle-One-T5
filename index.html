@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><img src="img/locker.png" alt="logo Encriptador">Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        <section class="escrita">
+            <textarea name="encriptador" class="encriptador" cols="30" rows="10" placeholder="Digite seu Texto"></textarea>
+            <p class="info-texto"> &#9432; Apenas letras minúsculas e sem acentos.</p>
+            <div class="box-botoes">
+                <button class="btn encriptar" onclick="btEncriptar()">Criptografar</button>
+                <button class="btn descriptar" onclick="btDescriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="copia-texto">
+            <div class="box-texto">
+                <h1 class="titulo-copiar">Oops!...</h1>
+                <p class="texto-copiar">Parece que você ainda não criptou nenhum texto</p>
+            </div>
+            <img class="img-semresultado" src="img/no-results.png" alt="">
+
+            <button class="btn copiar" onclick="copiaTexto()">Copiar</button>
+        </section>
+
+    </main>
+</body>
+    <script src="script.js"></script>
+</html>

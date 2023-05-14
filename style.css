@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root{
+    --maincolor: #020288;
+    --detailcolor: #c4b958;
+}
+
+*{
+    background: whitesmoke;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 30%;
+    margin: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--maincolor);
+}
+
+h1.logo img{
+    width: 50px;
+}
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section{
+    margin: 5% 0%;
+}
+
+.encriptador{
+    border: 1px solid whitesmoke;
+    padding: 5%;
+    box-sizing: border-box;
+    width: 95%;
+    display: block;
+    margin: 5% auto;
+    color: var(--maincolor);
+}
+
+::placeholder{
+    color: var(--maincolor);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+    :focus{
+        border: 1px solid var(--detailcolor);
+        outline: none;
+        border-radius: 30px;
+    }
+
+.info-texto{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3%;
+}
+
+.box-botoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 5%;
+    width: 90%;
+    margin: 3% auto;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.encriptar{
+    background: var(--maincolor);
+    color: whitesmoke;
+}
+
+.descriptar{
+    background: var(--detailcolor);
+    color: #333;
+}
+
+.box-texto{
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+.texto-copiar{
+    padding: 5px;
+    word-break: break-word;
+    width: 100%;
+}
+
+.img-semresultado{
+    width: 20%;
+    float: right;
+}
+
+.ativado{
+    display: block;
+    width: 100%;
+    transition: 1s;
+}
+
+.ativada{
+    width: 10px;
+    opacity: 0;
+}
+
+.copiar{
+    background: var(--detailcolor);
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.aparece{
+    opacity: 1;
+}
+
+
+
+@media screen and (min-width: 800px){
+   main{
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   
+   section{
+    margin: 0 auto;
+    padding: 10px;
+   }
+
+   section.escrita{
+    width: 60%;
+   }
+
+   .encriptador{
+    margin: 10px auto;
+   }
+
+   section.copia-texto{
+    width: 40%;
+   }
+
+   .box-botoes{
+    flex-direction: row;
+   }
+
+   .btn{
+    width: 250px;
+    height: 50px;
+    letter-spacing: 0;
+    line-height: 2px;
+    padding: 5%;
+    margin: 0 auto;
+    cursor: pointer;
+   }
+
+   .box-texto{
+    width: 100%;
+    display: block;
+    text-align: center;
+   }
+
+   .img-semresultado{
+    display: block;
+    float: unset;
+    width: 50%;
+    margin: 15% auto 15% auto;
+   }
+
+   .ativada{
+    width: 10px;
+    opacity: 0;
+    margin: 0;
+    }
+}
